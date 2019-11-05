@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/gilroyextrabold.woff2") format('woff2'), url("../fonts/gilroyextrabold.woff") format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/gilroylight.woff2") format('woff2'), url("../fonts/gilroylight.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  min-width: 1200px;
+
+  font: 300 15px/30px 'Open Sans', Arial, sans-serif;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.visually-hidden,
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header-top {
+  position: relative;
+
+  min-height: 188px;
+  margin-top: 40px;
+
+  background-color: #f7e296;
+}
+
+.main-logo {
+  position: absolute;
+  top: -25px;
+  left: 60px;
+
+  font: bold 48px/48px Gilroy, sans-serif;
+  text-transform: uppercase;
+}
+
+.header-search {
+  display: inline-block;
+  width: 440px;
+  margin: 37px 100px 0 60px;
+}
+
+.header-search-form {
+  position: relative;
+}
+
+.header-search-form::before {
+  content: "";
+
+  position: absolute;
+  top: 17px;
+  left: 3px;
+
+  width: 16px;
+  height: 16px;
+
+  background: url("../img/search.svg") 0 0 no-repeat;
+}
+
+.search-form-input {
+  display: inline-block;
+  width: 355px;
+  padding: 7px 15px 8px 39px;
+
+  box-sizing: border-box;
+  font: inherit;
+
+  background-color: transparent;
+  border: none;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.search-form-input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-form-input:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-form-input:focus {
+  border-bottom: 2px solid #000000;
+
+  outline: none;
+}
+
+.search-form-input:focus+.header-search-button {
+  display: inline-block;
+}
+
+.header-search-button {
+  display: none;
+  width: 85px;
+  margin-left: -4px;
+  padding: 7px 0 8px 0;
+
+  box-sizing: border-box;
+
+  font: inherit;
+  text-align: center;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.header-search-button:hover {
+  display: inline-block;
+
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.header-search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #000000;
+}
+
+.login {
+  display: inline-block;
+}
