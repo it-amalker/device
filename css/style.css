@@ -108,6 +108,8 @@ input[type="radio"].visually-hidden {
   font: bold 48px/48px Gilroy, sans-serif;
   letter-spacing: 0.48px;
   text-transform: uppercase;
+
+  cursor: pointer;
 }
 
 .main-logo:hover {
@@ -936,7 +938,7 @@ input[type="radio"].visually-hidden {
   padding-left: 35px;
 
   font: bold 16px/40px Gilroy, sans-serif;
-  letter-spacing: 0;
+  letter-spacing: normal;
 }
 
 .about-us li::before {
@@ -976,6 +978,7 @@ input[type="radio"].visually-hidden {
 .footer-top {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 24px;
 }
 
 .footer-logo {
@@ -985,6 +988,16 @@ input[type="radio"].visually-hidden {
   color: #ffc600;
   letter-spacing: 0.48px;
   text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.footer-logo:hover {
+  color: rgba(255, 198, 0, 0.6);
+}
+
+.footer-logo:active {
+  color: rgba(255, 198, 0, 0.3);
 }
 
 .footer-menu-item {
@@ -1069,4 +1082,186 @@ input[type="radio"].visually-hidden {
   height: 12px;
 
   background: url("../img/cart-footer.svg") 0 0 no-repeat;
+}
+
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 64px;
+}
+
+.address,
+.phone {
+  color: #ffffff;
+  letter-spacing: normal;
+}
+
+.footer-services-menu {
+  width: 425px;
+}
+
+.footer-services-menu-item {
+  display: inline-block;
+}
+
+.footer-services-menu-item:not(:last-child) {
+  padding-right: 27px;
+}
+
+.footer-services-menu-item a {
+  font: bold 18px/24px Gilroy, sans-serif;
+  color: #ffffff;
+  letter-spacing: 3.6px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer-services-menu-item a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-services-menu-item a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  padding-left: 509px;
+}
+
+.footer-bottom::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 80px;
+  height: 7px;
+  margin-top: -4px;
+
+  background-color: #ffc600;
+}
+
+.socials {
+  display: block;
+  width: 141px;
+}
+
+.social-item {
+  position: relative;
+
+  display: inline-block;
+  height: 32px;
+  padding-right: 44px;
+
+  vertical-align: middle;
+}
+
+.social-item a {
+  position: absolute;
+
+  width: 32px;
+  height: 32px;
+}
+
+.social-fb a::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 32px;
+  height: 32px;
+
+  background: url("../img/fb.svg") 0 0 no-repeat;
+  opacity: 0.3;
+}
+
+.social-insta a::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 32px;
+  height: 32px;
+
+  background: url("../img/insta.svg") 0 0 no-repeat;
+  opacity: 0.3;
+}
+
+.social-tw a::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 32px;
+  height: 32px;
+
+  background: url("../img/twitter.svg") 0 0 no-repeat;
+  opacity: 0.3;
+}
+
+.social-item a:hover::before {
+  opacity: 0.6;
+}
+
+.social-item a:active::before {
+  opacity: 0.1;
+}
+
+.developer {
+  position: relative;
+
+  width: 27px;
+}
+
+.developer::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 27px;
+  height: 35px;
+
+  background: url("../img/logo-html.svg") 0 0 no-repeat;
+}
+
+.developer:hover::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 27px;
+  height: 35px;
+
+  background: url("../img/logo-html.svg") 0 0 no-repeat;
+  opacity: 0.6;
+}
+
+.developer:active::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 27px;
+  height: 35px;
+
+  background: url("../img/logo-html.svg") 0 0 no-repeat;
+  opacity: 0.3;
 }
