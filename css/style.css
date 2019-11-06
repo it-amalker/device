@@ -729,3 +729,140 @@ input[type="radio"].visually-hidden {
 .product-item a:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  min-height: 388px;
+
+  background: linear-gradient(to bottom, transparent 100px, #e5e5e5 100px, #e5e5e5)
+}
+
+.services-list {
+  position: relative;
+
+  width: 284px;
+  padding-top: 80px;
+}
+
+.services-list::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 7px;
+  height: 319px;
+
+  background-color: #000000;
+}
+
+.service-item-button {
+  width: 160px;
+}
+
+.service-item.active .service-item-button {
+  width: 278px;
+  padding-left: 25px;
+
+  box-sizing: border-box;
+  color: #f7e184;
+  text-align: left;
+
+  background-image: linear-gradient(to bottom, #000000, #000000);
+}
+
+.service-slider {
+  position: relative;
+
+  width: 760px;
+}
+
+.service-slider::after {
+  content: "";
+
+  position: absolute;
+}
+
+.service-delivery::after {
+  top: 85px;
+  right: 66px;
+
+  width: 141px;
+  height: 164px;
+
+  background: url("../img/delivery.svg") 0 0 no-repeat;
+}
+
+.service-warranty::after {
+  top: 61px;
+  right: 46px;
+
+  width: 171px;
+  height: 194px;
+
+  background: url("../img/warranty.svg") 0 0 no-repeat;
+}
+
+.service-credit::after {
+  top: 61px;
+  right: 70px;
+
+  width: 156px;
+  height: 186px;
+
+  background: url("../img/credit.svg") 0 0 no-repeat;
+}
+
+.service-delivery,
+.service-warranty,
+.service-credit {
+  display: none;
+}
+
+.service-delivery.active,
+.service-warranty.active,
+.service-credit.active {
+  display: block;
+}
+
+.service-slider {
+  padding-top: 72px;
+}
+
+.service-slider-title {
+  padding-bottom: 31px;
+
+  font: bold 47px/48px Gilroy, sans-serif;
+  letter-spacing: 0.47px;
+}
+
+.service-slider-info {
+  max-width: 427px;
+}
+
+.partners {
+  height: 287px;
+}
+
+.partners-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.partner {
+  width: 260px;
+}
+
+.partner img {
+  width: 260px;
+  height: 100px;
+  filter: grayscale(100%) opacity(0.2);
+}
+
+.partner img:hover {
+  filter: grayscale(0) opacity(1);
+}
