@@ -66,6 +66,7 @@ input[type="radio"].visually-hidden {
 
   min-height: 188px;
   margin-top: 40px;
+  padding: 37px 60px 0 60px;
 
   background-color: #f7e296;
 }
@@ -82,7 +83,7 @@ input[type="radio"].visually-hidden {
 .header-search {
   display: inline-block;
   width: 440px;
-  margin: 37px 100px 0 60px;
+  margin-right: 100px;
 }
 
 .header-search-form {
@@ -165,4 +166,73 @@ input[type="radio"].visually-hidden {
 
 .login {
   display: inline-block;
+  width: 280px;
+}
+
+.login-guest.disabled,
+.login-user.disabled {
+  display: none;
+}
+
+.login-button {
+  position: relative;
+
+  padding-left: 27px;
+
+  color: #000000;
+  text-decoration: none;
+}
+
+.login-button::before,
+.user-name::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 13px;
+  height: 12px;
+  margin-top: -6px;
+
+  background: url("../img/user-icon.svg") 0 0 no-repeat;
+}
+
+.login-button:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.login-button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.login-button:hover::before {
+  opacity: 0.6;
+}
+
+.login-button:active::before {
+  opacity: 0.3;
+}
+
+.user-name {
+  position: relative;
+
+  padding-left: 27px;
+
+  font-weight: normal;
+}
+
+.logout-button {
+  padding-left: 16px;
+
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.logout-button:hover {
+  color: #000000;
+}
+
+.logout-button:active {
+  color: rgba(0, 0, 0, 0.6);
 }
