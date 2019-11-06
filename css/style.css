@@ -86,6 +86,10 @@ input[type="radio"].visually-hidden {
   background-color: #f0c52e;
 }
 
+.main-header {
+  margin-bottom: 40px;
+}
+
 .header-top {
   position: relative;
 
@@ -457,7 +461,7 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.slider-3 {
+.slider-1 {
   display: flex;
 }
 
@@ -601,4 +605,127 @@ input[type="radio"].visually-hidden {
 
 .switch:not(:last-child) {
   margin-right: 15px;
+}
+
+.products {
+  margin-bottom: 80px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-item {
+  position: relative;
+
+  width: 160px;
+  padding-top: 193px;
+}
+
+.product-item::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 160px;
+  height: 160px;
+
+  background-color: #f7e296;
+
+  cursor: pointer;
+}
+
+.product-item::after {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+
+  cursor: pointer;
+}
+
+.product-item:hover::before {
+  background-color: #f0c52e;
+}
+
+.product-item:active::before {
+  background-color: #f0c52e;
+}
+
+.product-item:active::after {
+  opacity: 0.3;
+}
+
+.product-item:first-child::after {
+  top: 52px;
+
+  width: 98px;
+  height: 56px;
+  margin-left: -49px;
+
+  background: url("../img/product-1.svg") 0 0 no-repeat;
+}
+
+.product-item:nth-child(2)::after {
+  top: 41px;
+
+  width: 86px;
+  height: 118px;
+  margin-left: -43px;
+
+  background: url("../img/product-2.svg") 0 0 no-repeat;
+}
+
+.product-item:nth-child(3)::after {
+  top: 38px;
+
+  width: 72px;
+  height: 87px;
+  margin-left: -36px;
+
+  background: url("../img/product-3.svg") 0 0 no-repeat;
+}
+
+.product-item:nth-child(4)::after {
+  top: 50px;
+
+  width: 108px;
+  height: 65px;
+  margin-left: -54px;
+
+  background: url("../img/product-4.svg") 0 0 no-repeat;
+}
+
+.product-item:nth-child(5)::after {
+  top: 32px;
+
+  width: 56px;
+  height: 98px;
+  margin-left: -28px;
+
+  background: url("../img/product-5.svg") 0 0 no-repeat;
+}
+
+.product-item:last-child::after {
+  top: 49px;
+
+  width: 132px;
+  height: 69px;
+  margin-left: -66px;
+
+  background: url("../img/product-6.svg") 0 0 no-repeat;
+}
+
+.product-item a {
+  font: bold 18px/24px Gilroy, sans-serif;
+  color: #000000;
+  letter-spacing: 0.18px;
+  text-decoration: none;
+}
+
+.product-item a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
