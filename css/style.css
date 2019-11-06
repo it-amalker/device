@@ -730,12 +730,14 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.services-wrap {
+  background: linear-gradient(to bottom, transparent 100px, #e5e5e5 100px, #e5e5e5);
+}
+
 .services {
   display: flex;
   justify-content: space-between;
   min-height: 388px;
-
-  background: linear-gradient(to bottom, transparent 100px, #e5e5e5 100px, #e5e5e5)
 }
 
 .services-list {
@@ -865,4 +867,85 @@ input[type="radio"].visually-hidden {
 
 .partner img:hover {
   filter: grayscale(0) opacity(1);
+}
+
+.contacts-delivery-info {
+  display: flex;
+  justify-content: space-between;
+  min-height: 655px;
+}
+
+.about-us,
+.contacts {
+  width: 560px;
+  padding-top: 51px;
+}
+
+.about-us-title,
+.contacts-title {
+  padding-bottom: 45px;
+
+  font: bold 47px/48px Gilroy, sans-serif;
+  letter-spacing: 0.47px;
+}
+
+.about-us-info,
+.about-us-delivery,
+.contacts-info {
+  max-width: 423px;
+  padding-bottom: 39px;
+
+  color: #464646;
+  letter-spacing: 0;
+}
+
+.about-us-delivery {
+  max-width: 475px;
+  padding-bottom: 65px;
+}
+
+.contacts-info {
+  max-width: 512px;
+  padding-bottom: 40px;
+}
+
+.about-us ul {
+  padding-bottom: 55px;
+}
+
+.about-us li {
+  position: relative;
+
+  padding-left: 35px;
+
+  font: bold 16px/40px Gilroy, sans-serif;
+  letter-spacing: 0;
+}
+
+.about-us li::before {
+  content: "";
+
+  position: absolute;
+  top: 16px;
+  left: 1px;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.about-us-more-button,
+.contacts-more-button {
+  width: 260px;
+}
+
+.contacts img {
+  width: 560px;
+  height: 222px;
+  padding-bottom: 69px;
+
+  cursor: pointer;
 }

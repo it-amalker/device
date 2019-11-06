@@ -139,9 +139,9 @@
       </ul>
     </div>
   </header>
-  <main class="container">
+  <main>
     <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
-    <section class="products">
+    <section class="products container">
       <h2 class="visually-hidden">Товары</h2>
       <ul class="product-list">
         <li class="product-item"><a href="#">Виртуальная реальность</a></li>
@@ -152,30 +152,33 @@
         <li class="product-item"><a href="#">Квадрокоптеры</a></li>
       </ul>
     </section>
-    <section class="services">
-      <h2 class="visually-hidden">Сервисы</h2>
-      <ul class="services-list">
-        <li class="service-item active"><a class="button service-item-button" href="#">Доставка</a></li>
-        <li class="service-item"><a class="button service-item-button" href="#">Гарантия</a></li>
-        <li class="service-item"><a class="button service-item-button" href="#">Кредит</a></li>
-      </ul>
-      <div class="service-slider service-delivery active">
-        <h3 class="service-slider-title">Доставка</h3>
-        <p class="service-slider-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-          бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-      </div>
-      <div class="service-slider service-warranty">
-        <h3 class="service-slider-title">Гарантия</h3>
-        <p class="service-slider-info">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте,
-          мы выдадим вам новый. Товар, не дом, конечно же.</p>
-      </div>
-      <div class="service-slider service-credit">
-        <h3 class="service-slider-title">Кредит</h3>
-        <p class="service-slider-info">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
-          наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-      </div>
-    </section>
-    <section class="partners">
+    <div class="services-wrap">
+      <section class="services container">
+        <h2 class="visually-hidden">Сервисы</h2>
+        <ul class="services-list">
+          <li class="service-item active"><a class="button service-item-button" href="#">Доставка</a></li>
+          <li class="service-item"><a class="button service-item-button" href="#">Гарантия</a></li>
+          <li class="service-item"><a class="button service-item-button" href="#">Кредит</a></li>
+        </ul>
+        <div class="service-slider service-delivery active">
+          <h3 class="service-slider-title">Доставка</h3>
+          <p class="service-slider-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+            бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
+        <div class="service-slider service-warranty">
+          <h3 class="service-slider-title">Гарантия</h3>
+          <p class="service-slider-info">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
+            переживайте,
+            мы выдадим вам новый. Товар, не дом, конечно же.</p>
+        </div>
+        <div class="service-slider service-credit">
+          <h3 class="service-slider-title">Кредит</h3>
+          <p class="service-slider-info">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+            наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+        </div>
+      </section>
+    </div>
+    <section class="partners container">
       <h2 class="visually-hidden">Партнеры</h2>
       <ul class="partners-list">
         <li class="partner"><a href="#"><img width="260" height="100" src="img/partner-1.png" alt="DJI"></a></li>
@@ -184,36 +187,27 @@
         <li class="partner"><a href="#"><img width="260" height="100" src="img/partner-4.png" alt="Vive"></a></li>
       </ul>
     </section>
-    <section class="about-us">
-      <h2 class="about-us-title">О нас</h2>
-      <p class="about-us-info">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-      <p class="about-us-delivery">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со
-        многими транспортными компаниями:</p>
-      <ul>
-        <li>Деловые Линии</li>
-        <li>Автотрейдинг</li>
-        <li>ЖелДорЭкспедиция</li>
-      </ul>
-      <a href="#" class="about-us-more">Подробнее о нас</a>
-    </section>
-    <section class="about-us">
-      <h2 class="about-us-title">О нас</h2>
-      <p class="about-us-info">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-      <p class="about-us-delivery">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со
-        многими транспортными компаниями:</p>
-      <ul>
-        <li>Деловые Линии</li>
-        <li>Автотрейдинг</li>
-        <li>ЖелДорЭкспедиция</li>
-      </ul>
-      <a href="#" class="about-us-more">Подробнее о нас</a>
-    </section>
-    <section class="contacts">
-      <h2 class="contacts-title">Контакты</h2>
-      <p class="contacts-info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
-        работоспособность покупки. Всякое бывает.</p>
-      <img src="img/map.png" width="560" height="222" alt="Карта с адресом">
-      <a href="#" class="contacts-more">Напишите нам</a>
+    <section class="contacts-delivery-info container">
+      <div class="about-us">
+        <h2 class="about-us-title">О нас</h2>
+        <p class="about-us-info">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+        </p>
+        <p class="about-us-delivery">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со
+          многими транспортными компаниями:</p>
+        <ul>
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="#" class="button about-us-more-button">Подробнее о нас</a>
+      </div>
+      <div class="contacts">
+        <h2 class="contacts-title">Контакты</h2>
+        <p class="contacts-info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
+          работоспособность покупки. Всякое бывает.</p>
+        <img src="img/map.png" width="560" height="222" alt="Карта с адресом">
+        <a href="#" class=" button contacts-more-button">Напишите нам</a>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
