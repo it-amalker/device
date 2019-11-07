@@ -1826,6 +1826,10 @@ input[type="radio"].visually-hidden {
   width: 760px;
 }
 
+.sort {
+  margin-bottom: 69px;
+}
+
 .sort-title {
   margin-right: 48px;
 }
@@ -1904,4 +1908,102 @@ input[type="radio"].visually-hidden {
 .arrow-down.active a {
   border-top-color: rgba(0, 0, 0, 1);
   border-bottom-color: rgba(0, 0, 0, 1);
+}
+
+.catalog-card-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  position: relative;
+
+  width: 360px;
+  min-height: 470px;
+  margin-bottom: 35px;
+}
+
+.card-item:hover .hover-card-item {
+  display: block;
+}
+
+
+.card-item img {
+  display: block;
+  width: 360px;
+  height: 380px;
+  padding-bottom: 32px;
+}
+
+.card-info-wrap {
+  display: table;
+  vertical-align: top;
+}
+
+.card-item-title {
+  display: table-cell;
+  width: 280px;
+
+  font: bold 18px/24px Gilroy, sans-serif;
+  letter-spacing: 0.18px;
+}
+
+.card-item-price {
+  display: table-cell;
+  width: 80px;
+
+  font: normal 16px/24px Gilroy, sans-serif;
+  color: #464646;
+  letter-spacing: 0.16px;
+  text-align: right;
+}
+
+.hover-card-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: none;
+  width: 360px;
+  height: 380px;
+  padding-top: 170px;
+
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.add-to-cart-btn {
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+
+  background-color: transparent;
+  border: none;
+}
+
+.add-to-compare-btn {
+  display: block;
+  width: 160px;
+  margin: 0 auto;
+
+  font-size: 13px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.13;
+
+  background-color: transparent;
+  border: none;
+}
+
+.add-to-compare-btn:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.add-to-compare-btn:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.add-to-compare-btn:focus {
+  outline: none;
 }
