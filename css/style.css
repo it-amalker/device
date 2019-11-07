@@ -1565,7 +1565,9 @@ input[type="radio"].visually-hidden {
   background-color: rgba(0, 0, 0, 0.08);
 }
 
-.filter-form-title {
+.filter-form-title,
+.sort-title {
+  display: inline-block;
   padding: 23px 0;
 
   font: bold 16px/24px Gilroy, sans-serif;
@@ -1820,12 +1822,86 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-
-
-
-
-
-
 .catalog {
   width: 760px;
+}
+
+.sort-title {
+  margin-right: 48px;
+}
+
+.sort-menu {
+  display: inline-block;
+  width: 560px;
+}
+
+.sort-item {
+  display: inline-block;
+}
+
+.sort-item:nth-child(-n + 2) {
+  padding-right: 23px;
+}
+
+.arrow-up {
+  padding-left: 240px;
+}
+
+.arrow-down {
+  padding-left: 14px;
+}
+
+.sort-item a {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: normal;
+  text-decoration: none;
+}
+
+.sort-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-item a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.sort-item.active a {
+  color: #000000;
+}
+
+.arrow-up a,
+.arrow-down a {
+  display: block;
+
+  border-width: 10px 5.5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.2);
+
+  border-top: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.arrow-down a {
+  transform: rotate(180deg);
+}
+
+.arrow-up a:hover,
+.arrow-down a:hover {
+  border-top-color: rgba(0, 0, 0, 0.4);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+}
+
+.arrow-up a:active,
+.arrow-down a:active {
+  border-top-color: rgba(0, 0, 0, 1);
+  border-bottom-color: rgba(0, 0, 0, 1);
+}
+
+.arrow-up.active a,
+.arrow-down.active a {
+  border-top-color: rgba(0, 0, 0, 1);
+  border-bottom-color: rgba(0, 0, 0, 1);
 }
