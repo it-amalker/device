@@ -182,49 +182,54 @@
             </li>
           </ul>
           <ul class="pagination">
-            <li class="pagination-item"><a href="#">Назад</a></li>
-            <li class="pagination-item"><a>1</a></li>
-            <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">Вперед</a></li>
+            <li class="pagination-item pagination-backwards"><a href="#">Назад</a></li>
+            <div class="num-pagination">
+              <li class="pagination-item active"><a>1</a></li>
+              <li class="pagination-item"><a href="#">2</a></li>
+              <li class="pagination-item"><a href="#">3</a></li>
+            </div>
+            <li class="pagination-item pagination-forwards"><a href="#">Вперед</a></li>
           </ul>
         </section>
       </div>
     </div>
   </main>
   <footer class="main-footer">
-    <div class="footer-top">
-      <b class="footer-logo">Device</b>
-      <ul class="footer-top-menu">
-        <li class="footer-menu-item">
-          <div class="footer-login-guest disabled">
-            <a href="" class="login-button">Войти</a>
-          </div>
-          <div class="footer-login-user">
-            <b class="user-name">Валентин Петухов</b>
-            <a href="" class="logout-button">Выйти</a>
-          </div>
-        </li>
-        <li class="footer-menu-item"><a href="#">Сравнить</a></li>
-        <li class="footer-menu-item"><a href="#">Корзина</a></li>
-      </ul>
-    </div>
-    <div class="footer-middle">
-      <p class="address">г. Москва, ул. Строителей, 15</p>
-      <ul class="footer-services-menu">
-        <li class="footer-services-menu-item"><a href="#">Доставка</a></li>
-        <li class="footer-services-menu-item"><a href="#">Гарантия</a></li>
-        <li class="footer-services-menu-item"><a href="#">Контакты</a></li>
-      </ul>
-      <p class="phone">Тел.: +7 (495) 495-95-95</p>
-    </div>
-    <div class="footer-bottom">
-      <ul class="socials">
-        <li class="social-item"><a href="#"><span class="visually-hidden">Facebook</span></a></li>
-        <li class="social-item"><a href="#"><span class="visually-hidden">Instagram</span></a></li>
-        <li class="social-item"><a href="#"><span class="visually-hidden">Twitter</span></a></li>
-      </ul>
-      <b class="developer"><span class="visually-hidden">HTML Academy</span></b>
+    <div class="footer-wrap container">
+      <div class="footer-top">
+        <a class="footer-logo" href="#">Device</a>
+        <ul class="footer-top-menu">
+          <li class="footer-menu-item">
+            <div class="footer-login-guest disabled">
+              <a href="#" class="footer-login-button">Войти</a>
+            </div>
+            <div class="footer-login-user">
+              <b class="footer-user-name">Валентин Петухов</b>
+              <a href="#" class="footer-logout-button">Выйти</a>
+            </div>
+          </li>
+          <li class="footer-menu-item"><a href="#">Сравнить</a></li>
+          <li class="footer-menu-item"><a href="#">Корзина</a></li>
+        </ul>
+      </div>
+      <div class="footer-middle">
+        <p class="address">г. Москва, ул. Строителей, 15</p>
+        <ul class="footer-services-menu">
+          <li class="footer-services-menu-item"><a href="#">Доставка</a></li>
+          <li class="footer-services-menu-item"><a href="#">Гарантия</a></li>
+          <li class="footer-services-menu-item"><a href="#">Контакты</a></li>
+        </ul>
+        <p class="phone">Тел.: +7 (495) 495-95-95</p>
+      </div>
+      <div class="footer-bottom">
+        <ul class="socials">
+          <li class="social-item social-fb"><a href="#"><span class="visually-hidden">Facebook</span></a></li>
+          <li class="social-item social-insta"><a href="#"><span class="visually-hidden">Instagram</span></a></li>
+          <li class="social-item social-tw"><a href="#"><span class="visually-hidden">Twitter</span></a></li>
+        </ul>
+        <a class="developer" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML
+            Academy</span></a>
+      </div>
     </div>
   </footer>
 </body>

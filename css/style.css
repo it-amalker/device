@@ -379,34 +379,39 @@ input[type="radio"].visually-hidden {
 .dropdown {
   position: relative;
 
-  width: 536px;
+  width: 250px;
+  margin-right: 286px;
   padding-bottom: 12px;
 }
 
-.dropdown::before {
+.dropdown::before,
+.dropdown::after {
   content: "";
 
   position: absolute;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dropdown::before {
   top: 15px;
   left: 230px;
 
   width: 16px;
   height: 2px;
-
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .dropdown::after {
-  content: "";
-
-  position: absolute;
   top: 8px;
   left: 237px;
 
   width: 2px;
   height: 16px;
+}
 
-  background-color: rgba(0, 0, 0, 0.3);
+.dropdown:hover::after,
+.dropdown:hover::before {
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .dropdown:hover .submenu {
@@ -2006,4 +2011,75 @@ input[type="radio"].visually-hidden {
 
 .add-to-compare-btn:focus {
   outline: none;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 760px;
+  margin-bottom: 77px;
+
+  background-color: #ebebeb;
+}
+
+.pagination-item {
+  display: inline-block;
+}
+
+.pagination-item a {
+  font: bold 16px/24px Gilroy, sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.pagination-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-item a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination-item.active a {
+  color: rgba(0, 0, 0, 1);
+}
+
+.num-pagination>.pagination-item:not(:last-child) {
+  margin-right: 27px;
+}
+
+.pagination-backwards {
+  width: 126px;
+  text-align: center;
+}
+
+.pagination-forwards {
+  width: 137px;
+  text-align: center;
+}
+
+.num-pagination {
+  width: 497px;
+  text-align: center;
+}
+
+.pagination-backwards a,
+.pagination-forwards a {
+  display: block;
+  padding: 23px 0;
+
+  color: #000000;
+}
+
+.pagination-backwards a:hover,
+.pagination-forwards a:hover {
+  background-color: #d9d9d9;
+}
+
+.pagination-backwards a:active,
+.pagination-forwards a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
