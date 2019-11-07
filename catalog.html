@@ -10,42 +10,50 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header inner-page container">
     <div class="header-top">
-      <b class="main-logo">Device</b>
-      <div class="header-search">
-        <form class="header-search-form" action="" method="GET">
-          <label class="visually-hidden" for="search">Поиск:</label>
-          <input type="text" name="search" id="search" placeholder="Поиск по сайту">
-          <button type="submit">Найти</button>
-        </form>
-      </div>
-      <div class="login">
-        <div class="login-guest disabled">
-          <a class="login-button" href="#">Войти</a>
+      <a class="main-logo" href="index.html">Device</a>
+      <div class="header-top-menu-wrap">
+        <div class="header-search">
+          <form class="header-search-form" action="" method="GET">
+            <label class="visually-hidden" for="search">Поиск:</label>
+            <input class="search-form-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
+            <button class="header-search-button" type="submit">Найти</button>
+          </form>
         </div>
-        <div class="login-user">
-          <b class="user-name">Валентин Петухов</b>
-          <a class="logout-button" href="#">Выйти</a>
+        <div class="login">
+          <div class="login-guest disabled">
+            <a class="login-button" href="#">Войти</a>
+          </div>
+          <div class="login-user">
+            <b class="user-name">Валентин Петухов</b>
+            <a class="logout-button" href="#">Выйти</a>
+          </div>
         </div>
-      </div>
-      <div class="compare">
-        <a class="compare-button" href="#">Сравнить</a>
-      </div>
-      <div class="cart">
-        <a class="cart-button" href="#">Корзина</a>
+        <div class="compare">
+          <a class="compare-button" href="#">Сравнить</a>
+        </div>
+        <div class="cart">
+          <a class="cart-button" href="#">Корзина</a>
+        </div>
       </div>
       <nav class="main-nav">
         <ul class="main-menu">
           <li class="menu-item dropdown">
-            <a href="#">Каталог товаров</a>
+            <a href="catalog.html">Каталог товаров</a>
             <ul class="submenu">
-              <li class="submenu-item"><a href="#">Виртуальная реальность</a></li>
-              <li class="submenu-item"><a href="#">Моноподы для селфи</a></li>
-              <li class="submenu-item"><a href="#">Экшн-камеры</a></li>
-              <li class="submenu-item"><a href="#">Фитнес-браслеты</a></li>
-              <li class="submenu-item"><a href="#">Умные часы</a></li>
-              <li class="submenu-item"><a href="#">Квадрокоптеры</a></li>
+              <div class="submenu-column">
+                <li class="submenu-item"><a href="#">Виртуальная реальность</a></li>
+                <li class="submenu-item"><a href="#">Моноподы для селфи</a></li>
+                <li class="submenu-item"><a href="#">Экшн-камеры</a></li>
+              </div>
+              <div class="submenu-column">
+                <li class="submenu-item"><a href="#">Фитнес-браслеты</a></li>
+                <li class="submenu-item"><a href="#">Умные часы</a></li>
+              </div>
+              <div class="submenu-column">
+                <li class="submenu-item"><a href="#">Квадрокоптеры</a></li>
+              </div>
             </ul>
           </li>
           <li class="menu-item"><a href="#">Доставка</a></li>
@@ -56,12 +64,14 @@
     </div>
   </header>
   <main>
-    <h1 class="page-title">Моноподы для селфи</h1>
-    <ul class="breadcrumbs">
-      <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
-      <li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
-      <li class="breadcrumbs-item"><a>Моноподы для селфи</a></li>
-    </ul>
+    <div class="container">
+      <h1 class="page-title">Моноподы для селфи</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
+        <li class="breadcrumbs-item"><a>Моноподы для селфи</a></li>
+      </ul>
+    </div>
     <aside class="filter">
       <form class="filter-form" action="#" method="post">
         <h2 class="filter-form-title">Фильтр:</h2>
@@ -191,26 +201,6 @@
       <b class="developer"><span class="visually-hidden">HTML Academy</span></b>
     </div>
   </footer>
-  <div class="modal-map">
-    <p>Здесь будет карта</p>
-    <button class="map-close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
-  </div>
-  <div class="modal-write-us">
-    <form class="write-us-form" action="#" method="POST">
-      <div class="input-group">
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-      </div>
-      <div class="input-group">
-        <label for="email">Ваш e-mail:</label>
-        <input type="email" name="email" id="email" placeholder="email@example.com">
-      </div>
-      <label for="message"></label>
-      <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
-      <button type="submit">Отправить</button>
-    </form>
-    <button class="write-us-close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
-  </div>
 </body>
 
 </html>

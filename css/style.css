@@ -74,6 +74,8 @@ input[type="radio"].visually-hidden {
   text-align: center;
 
   background-image: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+
+  transition: all 0.1s ease-in-out;
 }
 
 .button:hover {
@@ -88,6 +90,10 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   margin-bottom: 40px;
+}
+
+.main-header.inner-page {
+  margin-bottom: 37px;
 }
 
 .header-top {
@@ -106,10 +112,10 @@ input[type="radio"].visually-hidden {
   left: 60px;
 
   font: bold 48px/48px Gilroy, sans-serif;
+  color: #000000;
   letter-spacing: 0.48px;
   text-transform: uppercase;
-
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .main-logo:hover {
@@ -405,15 +411,16 @@ input[type="radio"].visually-hidden {
 
 .dropdown:hover .submenu {
   display: block;
-  z-index: 1;
+  z-index: 2;
 }
 
 .submenu {
   position: absolute;
   top: 42px;
+  left: -60px;
 
   display: none;
-  width: 1040px;
+  width: 1160px;
   padding-bottom: 33px;
 
   background-color: #f7e296;
@@ -427,6 +434,7 @@ input[type="radio"].visually-hidden {
 
 .submenu-column:first-child {
   width: 240px;
+  padding-left: 60px;
 }
 
 .submenu-item a {
@@ -988,8 +996,7 @@ input[type="radio"].visually-hidden {
   color: #ffc600;
   letter-spacing: 0.48px;
   text-transform: uppercase;
-
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .footer-logo:hover {
@@ -1437,7 +1444,22 @@ input[type="radio"].visually-hidden {
 
 .input-group input::placeholder,
 .write-us-form textarea::placeholder {
-  color: rgba(70, 70, 70, 0.4)
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.input-group input:hover,
+.write-us-form textarea:hover {
+  background-color: #eaeaea;
+}
+
+.input-group input:focus,
+.write-us-form textarea:focus {
+  padding: 13px 17px;
+  background-color: #ffffff;
+
+  border: 3px solid #f7e296;
+
+  outline: none;
 }
 
 .write-us-form textarea {
@@ -1455,4 +1477,60 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
 
   cursor: pointer;
+}
+
+.page-title {
+  margin-bottom: 38px;
+
+  font: bold 47px/48px Gilroy, sans-serif;
+  letter-spacing: 0.47px;
+}
+
+.breadcrumbs {
+  margin-bottom: 46px;
+}
+
+.breadcrumbs-item {
+  display: inline-block;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  padding-right: 34px;
+}
+
+.breadcrumbs-item a {
+  position: relative;
+
+  display: block;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.14px;
+  text-decoration: none;
+}
+
+.breadcrumbs-item:not(:last-child) a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs-item:not(:last-child) a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumbs-item:not(:last-child) a::after {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  right: -18px;
+
+  width: 4px;
+  height: 4px;
+
+  border: 1px solid #000000;
+  border-left-color: transparent;
+  border-top-color: transparent;
+
+  transform: rotate(-45deg);
 }
