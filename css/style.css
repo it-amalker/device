@@ -1004,12 +1004,17 @@ input[type="radio"].visually-hidden {
   display: inline-block;
 }
 
-.footer-login-user.disabled {
+.footer-login-user.disabled,
+.footer-login-guest.disabled {
   display: none;
 }
 
-.footer-menu-item:first-child {
+.footer-login-guest {
   width: 118px;
+}
+
+.footer-login-user {
+  width: 266px;
 }
 
 .footer-menu-item:nth-child(2) {
@@ -1022,7 +1027,6 @@ input[type="radio"].visually-hidden {
 
 .footer-menu-item a {
   position: relative;
-  line-height: 36px;
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
 }
@@ -1035,8 +1039,45 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.footer-menu-item:first-child a {
+.footer-login-user .footer-logout-button:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-login-user .footer-logout-button:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-user-name {
+  position: relative;
+
+  padding-left: 29px;
+
+  color: #ffffff;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.footer-user-name::before {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 0;
+
+  width: 13px;
+  height: 12px;
+
+  background: url("../img/user-footer.svg") 0 0 no-repeat;
+}
+
+.footer-login-button {
   padding-left: 27px;
+}
+
+.footer-login-user .footer-logout-button {
+  padding-left: 15px;
+
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-menu-item:nth-child(2) a {
@@ -1063,7 +1104,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.footer-menu-item:first-child a::before {
+.footer-login-button::before {
   width: 13px;
   height: 12px;
 
