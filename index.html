@@ -40,7 +40,7 @@
       <nav class="main-nav">
         <ul class="main-menu">
           <li class="menu-item dropdown">
-            <a href="#">Каталог товаров</a>
+            <a href="catalog.html">Каталог товаров</a>
             <ul class="submenu">
               <div class="submenu-column">
                 <li class="submenu-item"><a href="#">Виртуальная реальность</a></li>
@@ -255,21 +255,23 @@
       <button class="map-close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
     </div>
   </div>
-  <div class="modal-write-us">
-    <form class="write-us-form" action="#" method="POST">
-      <div class="input-group">
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-      </div>
-      <div class="input-group">
-        <label for="email">Ваш e-mail:</label>
-        <input type="email" name="email" id="email" placeholder="email@example.com">
-      </div>
-      <label for="message"></label>
-      <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
-      <button type="submit">Отправить</button>
-    </form>
-    <button class="write-us-close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+  <div class="modal-write-us disabled">
+    <div class="modal-write-us-wrap">
+      <form class="write-us-form" action="#" method="POST">
+        <div class="input-group">
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+        </div>
+        <div class="input-group">
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" name="email" id="email" placeholder="email@example.com">
+        </div>
+        <label for="message">Текст письма:</label>
+        <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+        <button class="button write-us-button" type="submit">Отправить</button>
+      </form>
+      <button class="write-us-close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </div>
   </div>
 </body>
 

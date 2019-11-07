@@ -1317,7 +1317,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
 
-  box-shadow: 0 10px 20px #040606;
+  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
 
 .modal-map.disable {
@@ -1338,7 +1338,8 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.map-close-button {
+.map-close-button,
+.write-us-close-button {
   position: absolute;
   top: 22px;
   right: 22px;
@@ -1357,8 +1358,101 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.map-close-button:hover {
+.map-close-button:hover,
+.write-us-close-button:hover {
   opacity: 1;
 
   transform: rotate(90deg);
+}
+
+.map-close-button:active,
+.write-us-close-button:active {
+  opacity: 0.3;
+
+  transform: rotate(90deg);
+}
+
+.modal-write-us {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+
+  margin-left: -480px;
+  margin-top: -276px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+}
+
+.modal-write-us.disabled {
+  display: none;
+}
+
+.modal-write-us-wrap {
+  position: relative;
+
+  width: 960px;
+  height: 553px;
+  padding: 100px;
+  padding-bottom: 78px;
+
+  box-sizing: border-box;
+}
+
+.input-group {
+  display: inline-block;
+  width: 360px;
+  margin-bottom: 33px;
+}
+
+.input-group:first-child {
+  margin-right: 35px;
+}
+
+.write-us-form label {
+  display: block;
+  padding-bottom: 7px;
+
+  font: bold 18px/24px Gilroy, sans-serif;
+  color: #000000;
+  letter-spacing: normal;
+}
+
+.input-group input,
+.write-us-form textarea {
+  width: 360px;
+  padding: 16px 20px;
+
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 18px;
+  color: #464646;
+  letter-spacing: normal;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.input-group input::placeholder,
+.write-us-form textarea::placeholder {
+  color: rgba(70, 70, 70, 0.4)
+}
+
+.write-us-form textarea {
+  width: 760px;
+  min-height: 156px;
+  margin-bottom: 41px;
+
+  resize: none;
+}
+
+.write-us-button {
+  width: 200px;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
 }
