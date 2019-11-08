@@ -471,13 +471,11 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.slider-1,
-.slider-2,
-.slider-3 {
+.slider {
   display: none;
 }
 
-.slider-1 {
+.slider.active {
   display: flex;
 }
 
@@ -1331,8 +1329,6 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
-
-  transition: all 0.6s ease-in-out;
 }
 
 .modal-map.disabled {
