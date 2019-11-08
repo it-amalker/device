@@ -162,6 +162,7 @@ input[type="radio"].visually-hidden {
 .search-form-input {
   display: inline-block;
   width: 355px;
+  height: 49px;
   padding: 9px 15px 8px 39px;
 
   -webkit-box-sizing: border-box;
@@ -322,7 +323,7 @@ input[type="radio"].visually-hidden {
 
   padding-left: 27px;
 
-  font-weight: normal;
+  font-weight: 300;
 }
 
 .logout-button {
@@ -643,7 +644,7 @@ input[type="radio"].visually-hidden {
   line-height: 20px;
   letter-spacing: 0.13px;
   color: #464646;
-  font-weight: normal;
+  font-weight: 300;
   text-align: left;
 }
 
@@ -967,15 +968,32 @@ input[type="radio"].visually-hidden {
 }
 
 .partner img {
+  position: relative;
+  z-index: -1;
   width: 260px;
   height: 100px;
-  -webkit-filter: grayscale(100%) opacity(0.2);
-  filter: grayscale(100%) opacity(0.2);
+
+  opacity: 0.2;
+
+  /* -webkit-filter: grayscale(100%) opacity(0.2);
+  filter: grayscale(100%); */
 }
 
-.partner img:hover {
-  -webkit-filter: grayscale(0) opacity(1);
-  filter: grayscale(0) opacity(1);
+/* For IE-11 support*/
+.partner:first-child:hover {
+  background: url("../img/partner-1.png") 0 0 no-repeat;
+}
+
+.partner:nth-child(2):hover {
+  background: url("../img/partner-2.png") 0 0 no-repeat;
+}
+
+.partner:nth-child(3):hover {
+  background: url("../img/partner-3.png") 0 0 no-repeat;
+}
+
+.partner:last-child:hover {
+  background: url("../img/partner-4.png") 0 0 no-repeat;
 }
 
 .contacts-delivery-info {
@@ -1175,7 +1193,7 @@ input[type="radio"].visually-hidden {
   padding-left: 29px;
 
   color: #ffffff;
-  font-weight: normal;
+  font-weight: 300;
   text-decoration: none;
 }
 
@@ -1273,7 +1291,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-services-menu {
-  width: 427px;
+  width: 431px;
 
   text-align: center;
 }
@@ -1310,10 +1328,8 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
 
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding-left: 509px;
+
+
 }
 
 .footer-bottom::before {
@@ -1333,6 +1349,7 @@ input[type="radio"].visually-hidden {
 .socials {
   display: block;
   width: 160px;
+  margin-left: 509px;
 }
 
 .social-item {
@@ -1406,6 +1423,8 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   width: 27px;
+  height: 35px;
+  margin-left: auto;
 }
 
 .developer::before {
@@ -1418,34 +1437,14 @@ input[type="radio"].visually-hidden {
   width: 27px;
   height: 35px;
 
-  background: url("../img/logo-html.svg") 0 0 no-repeat;
+  background: url("../img/logo-html.svg") center center no-repeat;
 }
 
 .developer:hover::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 27px;
-  height: 35px;
-
-  background: url("../img/logo-html.svg") 0 0 no-repeat;
   opacity: 0.6;
 }
 
 .developer:active::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 27px;
-  height: 35px;
-
-  background: url("../img/logo-html.svg") 0 0 no-repeat;
   opacity: 0.3;
 }
 
@@ -1863,7 +1862,7 @@ input[type="radio"].visually-hidden {
 }
 
 .control-right:hover {
-  left: 99px;
+  left: 101px;
 }
 
 .filter-input {
