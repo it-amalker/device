@@ -2154,7 +2154,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 360px;
   height: 380px;
-  padding-bottom: 31px;
+  margin-bottom: 31px;
 }
 
 .card-info-wrap {
@@ -2213,7 +2213,7 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 36px;
   color: rgba(0, 0, 0, 0.5);
-  letter-spacing: 0.13;
+  letter-spacing: 0.13px;
 
   background-color: transparent;
   border: none;
@@ -2310,8 +2310,8 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 1);
 }
 
-.num-pagination>.pagination-item:not(:last-child) {
-  margin-right: 24px;
+.num-pagination:not(:last-child) {
+  margin-right: 28px;
 }
 
 .pagination-backwards {
